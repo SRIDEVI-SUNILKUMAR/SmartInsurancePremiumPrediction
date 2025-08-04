@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load trained model pipeline
-model_pipeline = joblib.load("C:/Users/Lenovo/Documents/Guvi/Project_3/trained_model.pkl")
+model_pipeline = joblib.load("trained_model.pkl")
 
 # Page config
 st.set_page_config(
@@ -98,6 +98,7 @@ if st.button("💸 Predict Premium Amount", use_container_width=True):
             )
         except Exception as e:
             st.error(f"❌ Prediction failed: {e}")
+
 
 
 
